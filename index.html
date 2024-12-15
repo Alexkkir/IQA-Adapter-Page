@@ -168,25 +168,27 @@
 <!-- End paper abstract -->
 
 
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Architecture</h2>
-      <p>
-        We use the IP-Adapter technique to condition the generative model on image quality by integrating visual quality scores into the model without altering core weights, implemented as the IQA-Adapter. The IQA-Adapter projects these scores into tokens processed through decoupled cross-attention layers, enabling adjustments based on specified quality scores. It can integrate multiple image fidelity aspects and includes a scaling parameter to control quality conditioning impact during inference.
-        <br><br>
-      </p>
-      <div class="container" >
-        <img src="static/images/overall_scheme_converted-1.jpg" alt="MY ALT TEXT"  align="center" style=" max-width: 110%" />
-        <h2 class="subtitle has-text-centered">
-          <br>Overall architecture of the proposed IQA-Adapter. Yellow arrows demonstrate the flow of knowledge from IQA/IAA models to diffusion-based generator.
-        </h2>
+
+
+<section id="Architecture">
+  <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-five-fifths">
+          <h2 class="title is-2">Architecture</h2>
+          <div class="content has-text-justified">
+            <p>
+              We use the IP-Adapter technique to condition the generative model on image quality by integrating visual quality scores into the model without altering core weights, implemented as the IQA-Adapter. The IQA-Adapter projects these scores into tokens processed through decoupled cross-attention layers, enabling adjustments based on specified quality scores. It can integrate multiple image fidelity aspects and includes a scaling parameter to control quality conditioning impact during inference.
+            </p>
+          </div>
+          <img src="static/images/overall_scheme_converted-1.jpg"/>
+          <h2 class="subtitle has-text-centered">
+            <br>Overall architecture of the proposed IQA-Adapter. Yellow arrows demonstrate the flow of knowledge from IQA/IAA models to diffusion-based generator.
+          </h2>
+      
     </div>
     </div>
   </div>
 </section>
-
 
 
 
@@ -207,7 +209,7 @@
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
-    <div class="container content">
+    <div class="container content is-max-desktop">
       <h2 class="title">BibTeX</h2>
       <pre><code>
 @misc{iqaadapter,
